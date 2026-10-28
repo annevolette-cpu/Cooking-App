@@ -1,0 +1,6 @@
+{
+  "name": "Nordic & Calm Kitchen",
+  "description": "A serene Scandinavian culinary journal, interactive recipe studio, pantry checklist, and hands-free step-by-step cooking companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

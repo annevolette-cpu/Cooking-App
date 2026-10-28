@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="nordic"] {
+  --canvas: #FAF8F5;
+  --surface: #FFFFFF;
+  --surface-inset: #F5F2EB;
+  --border-hairline: #EBE6DF;
+  --text-primary: #1C1A17;
+  --text-secondary: #59534B;
+  --text-muted: #8C867E;
+  --accent-primary: #E05A38;
+  --accent-primary-hover: #C84E2E;
+  --accent-primary-soft: #FFF0EB;
+  --accent-secondary: #657257;
+  --accent-secondary-soft: #EEF2EA;
+  --accent-tertiary: #5E5C56;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius-card: 1.25rem;
+  --radius-control: 0.75rem;
+  --shadow-card: 0 4px 20px -2px rgba(28, 26, 23, 0.04);
+  --shadow-float: 0 12px 32px -4px rgba(28, 26, 23, 0.09);
+  --glass-header: rgba(250, 248, 245, 0.88);
+  --glass-bar: rgba(255, 255, 255, 0.94);
+}
+
+[data-theme="calm"] {
+  --canvas: #F7F7FA;
+  --surface: #FFFFFF;
+  --surface-inset: #F0F1F6;
+  --border-hairline: #E6E7F0;
+  --text-primary: #262730;
+  --text-secondary: #636574;
+  --text-muted: #9294A3;
+  --accent-primary: #7D7098;
+  --accent-primary-hover: #6B5E86;
+  --accent-primary-soft: #F2EFF8;
+  --accent-secondary: #5B74A8;
+  --accent-secondary-soft: #EAF0F9;
+  --accent-tertiary: #8AA39B;
+  --font-display: "Epilogue", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius-card: 1rem;
+  --radius-control: 0.625rem;
+  --shadow-card: 0 8px 24px -4px rgba(125, 112, 152, 0.07);
+  --shadow-float: 0 16px 36px -6px rgba(91, 116, 168, 0.14);
+  --glass-header: rgba(247, 247, 250, 0.88);
+  --glass-bar: rgba(255, 255, 255, 0.90);
+}
+
+html {
+  background-color: var(--canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  margin: 0;
+  transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.font-display-theme {
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
+.font-body-theme {
+  font-family: var(--font-body);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
